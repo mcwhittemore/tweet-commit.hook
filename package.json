@@ -1,0 +1,21 @@
+{
+  "name": "tweet-commit.hook",
+  "version": "0.0.0",
+  "description": "Send tweets via commit messages",
+  "main": "index.js",
+  "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "request": "~2.27.0",
+    "top-client": "0.0.1"
+  },
+  "hook-module": {
+    "script-type": "node",
+    "valid-for": [
+      "commit-msg"
+    ]
+  },
+  "scripts": {
+    "install": "node install.js"
+  }
+}
